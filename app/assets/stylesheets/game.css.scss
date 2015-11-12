@@ -1,0 +1,52 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.grey{
+	background-color: #777;
+}
+.blue{
+	background-color: #337ab7;
+}
+.orange{
+	background-color: #f0ad4e;
+}
+.panel-warning>.panel-heading{
+	background-image: -webkit-linear-gradient(top, #faf2cc 0%, #f0ad4e 100%);
+ 	background-image:      -o-linear-gradient(top, #faf2cc 0%, #f0ad4e 100%);
+ 	background-image: -webkit-gradient(linear, left top, left bottom, from(#faf2cc), to(#f0ad4e));
+ 	background-image: linear-gradient(to bottom,#faf2cc 0,#f0ad4e 100%);
+  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faf2cc', endColorstr='#f0ad4e', GradientType=0);
+  	background-repeat: repeat-x;
+}
+.green{
+	background-color: #5cb85c;
+}
+.red{
+	background-color: #d9534f;
+}
+.arrows td:hover{
+	opacity: 0.5;
+}
+.circle {
+	// width: 50px;
+	// height: 50px;
+	// background-color: transparent;
+	border: 1px solid black	;
+	// -moz-border-radius: 50%;
+	// -webkit-border-radius:  50%;
+	// border-radius:  50%;
+	position: relative;
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	padding-top: 100%;
+	margin-right: auto;
+	margin-left: auto
+}
+.log{
+	overflow-y: scroll;
+	height: 200px;
+}
+.log p{
+	margin: 0px;
+}

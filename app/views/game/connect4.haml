@@ -1,0 +1,152 @@
+.col-md-2
+  .panel.panel-danger.player1
+    .panel-heading
+      Player 1
+    .panel-body
+      Name:
+      %br
+      =text_field_tag 'player1', "", :place_holder=>"Please input name"
+      %br
+      %br
+      Select Color:
+      %br
+      = select_tag 'color', options_for_select(["red","blue"])
+    .panel-footer
+      =link_to 'Ready', '#', :onclick=>'ready(1)', :class=>'ready_link'
+      =link_to 'Roll a die', '#', :onclick=>'roll(1)', :class=>'roll_link hidden'
+  %hr
+  .panel.panel-warning.player2
+    .panel-heading
+      Player 2
+    .panel-body
+      Name:
+      %br
+      =text_field_tag 'player2', "", :place_holder=>"Please input name"
+      %br
+      %br
+      Select Color:
+      %br
+      = select_tag 'color2', options_for_select(["orange","green"])
+    .panel-footer
+      =link_to 'Ready', '#', :onclick=>'ready(2)', :class=>'ready_link'
+      =link_to 'Roll a die', '#', :onclick=>'roll(2)', :class=>'roll_link hidden'
+  
+.col-md-8
+  %table.table.table-bordered
+    %tr.arrows.hidden
+      %th.text-center.colored{:'data-col'=> 1}
+        %span 
+        V
+      %th.text-center.colored{:'data-col'=> 2}
+        %span 
+        V
+      %th.text-center.colored{:'data-col'=> 3}
+        %span
+        V
+      %th.text-center.colored{:'data-col'=> 4}
+        %span
+        V
+      %th.text-center.colored{:'data-col'=> 5}
+        %span
+        V
+      %th.text-center.colored{:'data-col'=> 6}
+        %span
+        V
+      %th.text-center.colored{:'data-col'=> 7}
+        %span
+        V
+
+    %tr{:'data-row'=> 1}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle  
+    %tr{:'data-row'=> 2}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+    %tr{:'data-row'=> 3}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+    %tr{:'data-row'=> 4}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle 
+    %tr{:'data-row'=> 5}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle  
+      %td
+        .circle 
+    %tr{:'data-row'=> 6}
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle
+      %td
+        .circle  
+.col-md-2
+  %h3 Logs
+  .log
+    %p.text-muted Waiting to ready..
